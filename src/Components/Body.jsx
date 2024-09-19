@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import image1 from "../assets/image1.png";
 import Community from "../assets/Community.png";
 import t1 from "../assets/t1.jpg";
@@ -11,9 +12,15 @@ import r3 from "../assets/r3.jpg";
 import r4 from "../assets/r4.jpg";
 import Artefacts from "../assets/Artefacts.png";
 import image5 from "../assets/Indin Post.png";
-import image6 from "../assets/Make IN india.png"
+import image6 from "../assets/Make IN india.png";
 
 export default function Body() {
+  const navigate = useNavigate();
+
+  const handleCommunityClick = () => {
+    navigate('/Community');
+  };
+
   return (
     <div>
       <div className="img_container">
@@ -36,9 +43,9 @@ export default function Body() {
           </div>
           <div className="community">
             <img className="Community_image" src={Community} alt="Community" />
-            <a className="community_link" href="#">
+            <button className="community_button" onClick={handleCommunityClick}>
               Your Community
-            </a>
+            </button>
           </div>
         </div>
       </div>
@@ -165,10 +172,10 @@ export default function Body() {
 
       <div className="image4-container">
         <div className="image5">
-      <img src={image5} alt="Indian Post" />
+          <img src={image5} alt="Indian Post" />
         </div>
         <div className="image6">
-      <img src={image6} alt="Make In India" />
+          <img src={image6} alt="Make In India" />
         </div>
       </div>
     </div>

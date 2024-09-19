@@ -1,16 +1,21 @@
-import Navbar from './Components/Navbar'
-import Body from './Components/Body'
-import Footer from './Components/Footer'
-import './index.css'
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Body from "./Components/Body";
+import Community from "./Components/Community";
+import Navbar from "./Components/Navbar"
+import Footer from "./Components/Footer"
 
 function App() {
   return (
-  <div>
+    <Router>
       <Navbar />
-      <Body />
+      <Routes>
+        <Route path="/" element={<Body />} />
+        <Route path="/community" element={<Community />} />
+      </Routes>
       <Footer />
-  </div>
-  )
+    </Router>
+  );
 }
 
-export default App
+export default App;
