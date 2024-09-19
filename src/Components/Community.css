@@ -1,0 +1,128 @@
+.background-container {
+    background-image: url('../assets/image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 120vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.overlay-text {
+    flex-direction: column;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-align: left;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.626);
+    max-width: 40%;
+    height: 250px;
+    flex: 1;
+}
+
+.container1 {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+}
+
+.container1 .text {
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.cimage img {
+    height: 300px;
+    width: 500px;
+}
+
+.cbutton {
+    margin-top: 50px;
+    margin-right: 50px;
+    padding: 50px;
+    height: 180px;
+    width: 250px;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.3);
+}
+
+.cbutton a {
+    font-size: 1.3em;
+    text-decoration: none;
+    color: black;
+}
+
+.cbutton:hover {
+    background-color: #7e5170;
+    border-color: #7e5170;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.3);
+    transform: translateY(2px);
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 50px;
+    width: 100%;
+    padding: 20px;
+}
+
+.buttonex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 400px;
+}
+
+.cbutton1, .cbutton2 {
+    display: flex;
+    padding: 20px;
+    width: 900px;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.3);
+    height: 200px;
+    width: 250px;
+}
+
+.cbutton1:hover, .cbutton2:hover {
+    background-color: #7e5170;
+    border-color: #7e5170;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.3);
+    transform: translateY(2px);
+}
+
+.cimage2 img {
+    height: 200px;
+    width: 200px;
+}
+
+.text2container {
+    margin-left: 30px;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+}
