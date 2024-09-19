@@ -1,5 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter } from 'react-router-dom';
+
 import Body from "./Components/Body";
 import Community from "./Components/Community";
 import Navbar from "./Components/Navbar";
